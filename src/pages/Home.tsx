@@ -220,7 +220,7 @@ const Home = () => {
   }, [activeTab]);
 
   const filterAndTrimAnime = (animeList: Paging) =>
-    animeList.results
+    animeList.results?
       /*       .filter(
               (anime: Anime) =>
                 anime.totalEpisodes !== null &&
