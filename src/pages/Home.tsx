@@ -220,14 +220,7 @@ const Home = () => {
   }, [activeTab]);
 
   const filterAndTrimAnime = (animeList: Paging) =>
-    animeList.results?
-      /*       .filter(
-              (anime: Anime) =>
-                anime.totalEpisodes !== null &&
-                anime.duration !== null &&
-                anime.releaseDate !== null,
-            ) */
-      .slice(0, itemsCount);
+    animeList.results?.slice(0, itemsCount);
 
   const renderCardGrid = (
     animeData: Anime[],
